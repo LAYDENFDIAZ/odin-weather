@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <input
+        id="locationInput"
+        class="location-input"
+        type="text"
+        placeholder="Enter City Name or ZIP Code"
+      />
+      <button id="fetchWeatherButton" class="fetch-weather">Get Weather</button>
+      <button class="toggle-unit">Toggle Units</button>
+      <div id="weatherInfo" class="weather-display">
+        <!-- Weather information will be displayed here -->
+      </div>
+      <div id="loading" style="display: none">Loading...</div>
+      <div id="errorMessage" class="error-message">
+        <!-- Error messages will be displayed here -->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
